@@ -68,9 +68,11 @@ clearButton.addEventListener("click", clear);
 //still not sure how the keypress for enter works completely. This website helped me get something that worked.. https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent//
 
 document.addEventListener('keypress', (event) => {
+    console.log(event);
   var keyName = event.key;
   if (keyName === 'Enter') {
     tempConverter();
   }
 }, false);
 
+//took form element out of html so the page would not refresh and would log each keypress event//
