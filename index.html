@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Document</title>
+       
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Temperature Converter</legend>
+                <label for="number">Temperature:</label>
+                <input type="number" id="number" name="number-input"> <br>
+                <input type="radio" name="radio" value="celcius" id="celcius-button">Celcius
+                <input type="radio" name="radio" value="farenheit" id="radio-farenheit">Farenheit <br>
+                <button type="button" value="convert" id="convertButton" onkeypress="e()">Convert</button>
+<!--                <input type="submit" value="convert" id="convert-bitton"></input>-->
+            </fieldset>
+
+            <fieldset>
+                <legend>Converted Value</legend>
+                <p id="converted-value"></p>
+                <button id="clear-button" type="reset" >Clear</button>
+            </fieldset>
+        </form>
+        
+        <script src="converter.js"></script>
+    </body>
+</html>
+
