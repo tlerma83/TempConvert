@@ -40,7 +40,7 @@ function tempConverter () {
     var inputValue = parseInt(inputField.value);
     if (inputValue !== inputValue) {
         alert("Please enter a number");
-    } else if (celciusRadioButt.checked === false &&       farenheitRadioButt.checked === false) {
+    } else if (celciusRadioButt.checked === false && farenheitRadioButt.checked === false) {
         alert("Please choose Celcius or Farenheit");      
     } else if (celciusRadioButt.checked) {
         toCelcius();
